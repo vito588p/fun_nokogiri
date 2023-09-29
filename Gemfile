@@ -10,6 +10,7 @@ gem 'image_processing', '~> 1.2'
 gem 'importmap-rails'
 gem 'jbuilder'
 gem 'nokogiri', '~> 1.15'
+gem "open-uri", "~> 0.3.0"
 gem 'pg', '~> 1.1'
 gem 'puma', '~> 5.0'
 gem 'rails', '~> 7.0.7', '>= 7.0.7.2'
@@ -34,3 +35,4 @@ group :test do
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
+

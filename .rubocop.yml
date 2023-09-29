@@ -1,0 +1,14 @@
+AllCops:
+  DisplayCopNames: true
+  DisplayStyleGuide: true
+  IndentationWidth: 2
+  Exclude:
+    - db/schema.rb
+    - db/seeds.rb
+    - db/migrate/**/*
+    - bin/**/*
+    - vendor/**/*
+    - config/**/*
+
+Style/Documentation:
+  Enabled: false

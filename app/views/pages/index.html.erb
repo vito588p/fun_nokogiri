@@ -1,0 +1,7 @@
+<%= link_to "每日即時重大訊息之公司", pages_path %>
+<h1>天瓏書局 - 近30天中文熱門暢銷</h1>
+<div>
+  <% @doc.css('li.single-book .title a').each do |name| %>
+    <%= name.content %><br/>
+  <% end %>
+</div>

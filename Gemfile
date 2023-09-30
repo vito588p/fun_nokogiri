@@ -20,6 +20,7 @@ gem 'turbo-rails'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 group :development, :test do
+  gem "bullet", "~> 7.0"
   gem 'debug', platforms: %i[mri mingw x64_mingw]
   gem 'dotenv-rails', '~> 2.8'
   gem 'rspec-rails', '~> 6.0'
@@ -35,4 +36,5 @@ group :test do
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
+
 

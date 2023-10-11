@@ -18,11 +18,14 @@ gem 'sprockets-rails'
 gem 'stimulus-rails'
 gem 'turbo-rails'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+gem "wicked_pdf", "~> 2.7"
+gem "wkhtmltopdf-binary", "~> 0.12.6"
 
 group :development, :test do
   gem "bullet", "~> 7.0"
   gem 'debug', platforms: %i[mri mingw x64_mingw]
   gem 'dotenv-rails', '~> 2.8'
+  gem "pry", "~> 0.14.2"
   gem 'rspec-rails', '~> 6.0'
   gem 'rubocop', '~> 1.56'
 end
@@ -36,5 +39,3 @@ group :test do
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
-
-

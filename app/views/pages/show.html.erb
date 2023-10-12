@@ -1,0 +1,12 @@
+<%= link_to "回首頁", root_path %>
+<%= link_to '下載 PDF', pages_path(format: :pdf) %>
+
+<h1>每日即時重大訊息之公司</h1>
+<h2><%= Time.now.strftime('%Y/%m/%d - %H:%M:%S') %></h2>
+<div>
+  <% @doc.css("table.hasBorder tr td:nth-of-type(1), table.hasBorder tr td:nth-of-type(2), table.hasBorder tr td:nth-of-type(5)").each do |id| %>
+    <div>
+      <%= id.content %><br/>
+    </div>
+  <% end %>
+</div>
